@@ -1,0 +1,2 @@
+<!-- WattMate Logo as Widget -->
+<!-- This will be converted to Flutter widget -->

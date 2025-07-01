@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../widgets/wattmate_logo.dart';
+import '../services/auth_service.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -29,6 +30,17 @@ class _LoginPageState extends State<LoginPage>
       CurvedAnimation(parent: _animationController, curve: Curves.easeInOut),
     );
     _animationController.forward();
+
+    // Check if user is already logged in
+    _checkLoginStatus();
+  }
+
+  void _checkLoginStatus() async {
+    final isLoggedIn = await AuthService.isLoggedIn();
+    if (isLoggedIn && mounted) {
+      // Redirect to dashboard if already logged in
+      Navigator.of(context).pushReplacementNamed('/dashboard');
+    }
   }
 
   @override
@@ -45,16 +57,43 @@ class _LoginPageState extends State<LoginPage>
         _isLoading = true;
       });
 
-      // Simulasi proses login
-      await Future.delayed(const Duration(seconds: 2));
+      try {
+        // Call AuthService to login
+        final loginResponse = await AuthService.login(
+          _emailController.text.trim(),
+          _passwordController.text,
+        );
 
-      setState(() {
-        _isLoading = false;
-      });
+        if (mounted) {
+          // Show success message
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text('Selamat datang, ${loginResponse.data.user.name}!'),
+              backgroundColor: Colors.green,
+              duration: const Duration(seconds: 2),
+            ),
+          );
 
-      // Navigate to dashboard after successful login
-      if (mounted) {
-        Navigator.of(context).pushReplacementNamed('/dashboard');
+          // Navigate to dashboard after successful login
+          Navigator.of(context).pushReplacementNamed('/dashboard');
+        }
+      } catch (e) {
+        if (mounted) {
+          // Show error message
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text(e.toString().replaceFirst('Exception: ', '')),
+              backgroundColor: Colors.red,
+              duration: const Duration(seconds: 4),
+            ),
+          );
+        }
+      } finally {
+        if (mounted) {
+          setState(() {
+            _isLoading = false;
+          });
+        }
       }
     }
   }

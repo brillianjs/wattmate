@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../services/auth_service.dart';
 
 class PengaturanPage extends StatefulWidget {
   const PengaturanPage({super.key});
@@ -673,11 +674,18 @@ class _PengaturanPageState extends State<PengaturanPage> {
               child: const Text('Batal'),
             ),
             TextButton(
-              onPressed: () {
+              onPressed: () async {
                 Navigator.of(context).pop();
-                Navigator.of(
-                  context,
-                ).pushNamedAndRemoveUntil('/login', (route) => false);
+
+                // Clear stored login data
+                await AuthService.logout();
+
+                // Navigate to login and remove all previous routes
+                if (context.mounted) {
+                  Navigator.of(
+                    context,
+                  ).pushNamedAndRemoveUntil('/login', (route) => false);
+                }
               },
               style: TextButton.styleFrom(
                 foregroundColor: const Color(0xFFEF4444),

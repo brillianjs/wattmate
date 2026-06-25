@@ -92,13 +92,13 @@ class _AdminLoginPageState extends State<AdminLoginPage> {
                     style: TextStyle(
                       fontSize: 32,
                       fontWeight: FontWeight.bold,
-                      color: Color(0xFF1E3A8A),
+                      color: Color(0xFF009688),
                     ),
                   ),
                   const SizedBox(height: 8),
                   const Text(
                     'Admin Panel',
-                    style: TextStyle(fontSize: 14, color: Color(0xFF64748B)),
+                    style: TextStyle(fontSize: 14, color: Color(0xFF00796B)),
                   ),
                   const SizedBox(height: 40),
                   // Login Card
@@ -123,15 +123,16 @@ class _AdminLoginPageState extends State<AdminLoginPage> {
                           const Text(
                             'Login Admin',
                             style: TextStyle(
-                              fontSize: 24,
+                              fontSize: 20,
                               fontWeight: FontWeight.bold,
                               color: Color(0xFF1E293B),
                             ),
                           ),
-                          const SizedBox(height: 24),
+                          const SizedBox(height: 20),
                           // Email
                           TextFormField(
                             controller: _emailController,
+                            style: const TextStyle(fontSize: 14),
                             validator: (value) {
                               if (value == null || value.isEmpty) {
                                 return 'Email tidak boleh kosong';
@@ -140,7 +141,15 @@ class _AdminLoginPageState extends State<AdminLoginPage> {
                             },
                             decoration: InputDecoration(
                               hintText: 'Email',
-                              prefixIcon: const Icon(Icons.email_outlined),
+                              hintStyle: const TextStyle(fontSize: 14),
+                              prefixIcon: const Icon(
+                                Icons.email_outlined,
+                                size: 20,
+                              ),
+                              contentPadding: const EdgeInsets.symmetric(
+                                vertical: 14,
+                                horizontal: 16,
+                              ),
                               filled: true,
                               fillColor: const Color(0xFFF8FAFC),
                               border: OutlineInputBorder(
@@ -164,11 +173,12 @@ class _AdminLoginPageState extends State<AdminLoginPage> {
                               ),
                             ),
                           ),
-                          const SizedBox(height: 16),
+                          const SizedBox(height: 14),
                           // Password
                           TextFormField(
                             controller: _passwordController,
                             obscureText: _obscurePassword,
+                            style: const TextStyle(fontSize: 14),
                             validator: (value) {
                               if (value == null || value.isEmpty) {
                                 return 'Password tidak boleh kosong';
@@ -177,18 +187,27 @@ class _AdminLoginPageState extends State<AdminLoginPage> {
                             },
                             decoration: InputDecoration(
                               hintText: 'Password',
-                              prefixIcon: const Icon(Icons.lock_outline),
+                              hintStyle: const TextStyle(fontSize: 14),
+                              prefixIcon: const Icon(
+                                Icons.lock_outline,
+                                size: 20,
+                              ),
                               suffixIcon: IconButton(
                                 icon: Icon(
                                   _obscurePassword
                                       ? Icons.visibility_off
                                       : Icons.visibility,
+                                  size: 20,
                                 ),
                                 onPressed: () {
                                   setState(() {
                                     _obscurePassword = !_obscurePassword;
                                   });
                                 },
+                              ),
+                              contentPadding: const EdgeInsets.symmetric(
+                                vertical: 14,
+                                horizontal: 16,
                               ),
                               filled: true,
                               fillColor: const Color(0xFFF8FAFC),
@@ -213,14 +232,14 @@ class _AdminLoginPageState extends State<AdminLoginPage> {
                               ),
                             ),
                           ),
-                          const SizedBox(height: 24),
+                          const SizedBox(height: 20),
                           //Login Button
                           ElevatedButton(
                             onPressed: _handleLogin,
                             style: ElevatedButton.styleFrom(
                               backgroundColor: const Color(0xFF009688),
                               foregroundColor: Colors.white,
-                              padding: const EdgeInsets.symmetric(vertical: 16),
+                              padding: const EdgeInsets.symmetric(vertical: 12),
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(12),
                               ),
@@ -229,7 +248,7 @@ class _AdminLoginPageState extends State<AdminLoginPage> {
                             child: const Text(
                               'Login',
                               style: TextStyle(
-                                fontSize: 16,
+                                fontSize: 15,
                                 fontWeight: FontWeight.w600,
                               ),
                             ),

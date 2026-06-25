@@ -60,7 +60,7 @@ class ProfileScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: 16),
                   const Text(
-                    'Admin WattMate',
+                    'Admin Gridova',
                     style: TextStyle(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
@@ -104,7 +104,7 @@ class ProfileScreen extends StatelessWidget {
                   _buildInfoCard(
                     icon: Icons.email_outlined,
                     label: 'Email',
-                    value: 'admin@wattmate.com',
+                    value: 'admin@gridova.com',
                   ),
                   const SizedBox(height: 12),
                   _buildInfoCard(

@@ -1,4 +1,4 @@
-package com.example.wattmate
+package com.example.gridova
 
 import io.flutter.embedding.android.FlutterActivity
 

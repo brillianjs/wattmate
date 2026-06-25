@@ -102,7 +102,7 @@ class _LoginPageState extends State<LoginPage> {
             ],
           ),
           child: Image.asset(
-            'assets/images/logo-wattmate.png',
+            'assets/images/logo-gridova.png',
             fit: BoxFit.contain,
             errorBuilder: (context, error, stackTrace) => const Icon(
               Icons.electrical_services,

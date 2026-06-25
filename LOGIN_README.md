@@ -1,6 +1,6 @@
-# WattMate - Login Page
+# Gridova - Login Page
 
-Halaman login untuk aplikasi WattMate telah dibuat sesuai design.
+Halaman login untuk aplikasi Gridova telah dibuat sesuai design.
 
 ## Fitur Login Page
 
@@ -13,7 +13,7 @@ Halaman login untuk aplikasi WattMate telah dibuat sesuai design.
 ✅ Opsi login dengan Google dan Nomor HP
 ✅ Link untuk daftar akun baru
 ✅ Responsive design
-✅ Logo WattMate dengan icon listrik
+✅ Logo Gridova dengan icon listrik
 
 ## Cara Menjalankan Aplikasi
 

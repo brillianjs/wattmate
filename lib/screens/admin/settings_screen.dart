@@ -455,7 +455,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
               ),
             ),
             const SizedBox(height: 12),
-            const Text('WattMate Admin'),
+            const Text('Gridova Admin'),
           ],
         ),
         content: const Column(
@@ -473,7 +473,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
             ),
             SizedBox(height: 16),
             Text(
-              '© 2024 WattMate',
+              '© 2024 Gridova',
               style: TextStyle(fontSize: 12, color: Colors.grey),
             ),
           ],

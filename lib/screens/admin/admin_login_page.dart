@@ -80,7 +80,7 @@ class _AdminLoginPageState extends State<AdminLoginPage> {
                       child: Padding(
                         padding: const EdgeInsets.all(16.0),
                         child: Image.asset(
-                          'assets/images/logo-wattmate.png',
+                          'assets/images/logo-gridova.png',
                           fit: BoxFit.contain,
                         ),
                       ),
@@ -88,7 +88,7 @@ class _AdminLoginPageState extends State<AdminLoginPage> {
                   ),
                   const SizedBox(height: 20),
                   const Text(
-                    'WattMate',
+                    'Gridova',
                     style: TextStyle(
                       fontSize: 32,
                       fontWeight: FontWeight.bold,
@@ -237,7 +237,7 @@ class _AdminLoginPageState extends State<AdminLoginPage> {
                           const SizedBox(height: 16),
                           Center(
                             child: Text(
-                              'Demo: admin@wattmate.com / admin123',
+                              'Demo: admin@gridova.com / admin123',
                               style: TextStyle(
                                 fontSize: 12,
                                 color: Colors.grey[600],

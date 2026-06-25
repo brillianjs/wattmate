@@ -1,7 +1,7 @@
-# ⚡ WattMate - Smart Electricity Management System
+# ⚡ Gridova - Smart Electricity Management System
 
 <div align="center">
-  <img src="assets/images/logo-wattmate.png" width="120" alt="WattMate Logo">
+  <img src="assets/images/logo-gridova.png" width="120" alt="Gridova Logo">
   
   ### Aplikasi Manajemen Token Listrik Pintar untuk Kos-kosan
   
@@ -14,7 +14,7 @@
 
 ## 📖 Tentang Aplikasi
 
-**WattMate** adalah aplikasi manajemen listrik berbasis mobile untuk pengelola kos-kosan yang memungkinkan pemantauan real-time penggunaan daya, manajemen transaksi token, dan komunikasi dengan penyewa melalui satu platform terpadu.
+**Gridova** adalah aplikasi manajemen listrik berbasis mobile untuk pengelola kos-kosan yang memungkinkan pemantauan real-time penggunaan daya, manajemen transaksi token, dan komunikasi dengan penyewa melalui satu platform terpadu.
 
 ### 🎯 Tujuan
 
@@ -124,8 +124,8 @@
 1. **Clone repository**
 
    ```bash
-   git clone https://github.com/brillianjs/wattmate.git
-   cd wattmate
+   git clone https://github.com/brillianjs/gridova.git
+   cd gridova
    ```
 
 2. **Install dependencies**
@@ -165,7 +165,7 @@
 ## 📂 Struktur Project
 
 ```
-wattmate/
+gridova/
 ├── lib/
 │   ├── main.dart                          # Entry point aplikasi
 │   ├── models/
@@ -191,7 +191,7 @@ wattmate/
 │       └── ...
 ├── assets/
 │   └── images/
-│       ├── logo-wattmate.png             # Logo aplikasi
+│       ├── logo-gridova.png             # Logo aplikasi
 │       └── background_illustration.png    # Background pattern
 ├── pubspec.yaml                          # Dependencies & assets
 └── README.md
@@ -226,7 +226,7 @@ wattmate/
 Untuk testing aplikasi, gunakan kredensial berikut:
 
 ```
-Email    : admin@wattmate.com
+Email    : admin@gridova.com
 Password : admin123
 ```
 
@@ -321,9 +321,9 @@ Contributions, issues, dan feature requests sangat diterima!
 
 ## 📞 Kontak & Support
 
-- **Email**: support@wattmate.com
+- **Email**: support@gridova.com
 - **WhatsApp**: +62 812-3456-7890
-- **GitHub**: [github.com/brillianjs/wattmate](https://github.com/brillianjs/wattmate)
+- **GitHub**: [github.com/brillianjs/gridova](https://github.com/brillianjs/gridova)
 
 ---
 
@@ -331,7 +331,7 @@ Contributions, issues, dan feature requests sangat diterima!
   
 ### ⚡ Built with Flutter & 💚
   
-**WattMate** - Smart Electricity Management System
+**Gridova** - Smart Electricity Management System
   
 *Efisiensi Energi, Manajemen Lebih Mudah*
 

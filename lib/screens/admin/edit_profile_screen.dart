@@ -10,8 +10,8 @@ class EditProfileScreen extends StatefulWidget {
 
 class _EditProfileScreenState extends State<EditProfileScreen> {
   final _formKey = GlobalKey<FormState>();
-  final _nameController = TextEditingController(text: 'Admin WattMate');
-  final _emailController = TextEditingController(text: 'admin@wattmate.com');
+  final _nameController = TextEditingController(text: 'Admin Gridova');
+  final _emailController = TextEditingController(text: 'admin@gridova.com');
   final _phoneController = TextEditingController(text: '+62 812-3456-7890');
 
   bool _isLoading = false;

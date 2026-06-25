@@ -107,7 +107,7 @@ class _SplashScreenState extends State<SplashScreen>
                           child: Padding(
                             padding: const EdgeInsets.all(24.0),
                             child: Image.asset(
-                              'assets/images/logo-wattmate.png',
+                              'assets/images/logo-gridova.png',
                               fit: BoxFit.contain,
                             ),
                           ),
@@ -127,7 +127,7 @@ class _SplashScreenState extends State<SplashScreen>
                     child: Column(
                       children: [
                         const Text(
-                          'WattMate',
+                          'Gridova',
                           style: TextStyle(
                             fontSize: 42,
                             fontWeight: FontWeight.bold,

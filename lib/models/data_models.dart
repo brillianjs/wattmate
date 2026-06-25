@@ -1,4 +1,4 @@
-// Data models for WattMate application
+// Data models for Gridova application
 
 class BoardingHouse {
   final String name;

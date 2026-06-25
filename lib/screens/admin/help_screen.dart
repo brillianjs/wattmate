@@ -100,7 +100,7 @@ class HelpScreen extends StatelessWidget {
                     context,
                     icon: Icons.email_outlined,
                     title: 'Email Support',
-                    subtitle: 'support@wattmate.com',
+                    subtitle: 'support@gridova.com',
                     color: const Color(0xFF009688),
                     onTap: () {
                       _launchEmail(context);
@@ -224,7 +224,7 @@ class HelpScreen extends StatelessWidget {
                         ),
                         const SizedBox(height: 12),
                         const Text(
-                          'WattMate Admin',
+                          'Gridova Admin',
                           style: TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
@@ -244,7 +244,7 @@ class HelpScreen extends StatelessWidget {
                         ),
                         const SizedBox(height: 16),
                         const Text(
-                          '© 2024 WattMate. All rights reserved.',
+                          '© 2024 Gridova. All rights reserved.',
                           style: TextStyle(fontSize: 12, color: Colors.white70),
                         ),
                       ],
@@ -445,7 +445,7 @@ class HelpScreen extends StatelessWidget {
         duration: Duration(seconds: 2),
       ),
     );
-    // Implementasi actual: launchUrl(Uri.parse('mailto:support@wattmate.com'))
+    // Implementasi actual: launchUrl(Uri.parse('mailto:support@gridova.com'))
   }
 
   void _launchPhone(BuildContext context) {

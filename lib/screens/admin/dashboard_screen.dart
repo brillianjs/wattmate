@@ -38,7 +38,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Text(
-              'WattMate',
+              'Gridova',
               style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
